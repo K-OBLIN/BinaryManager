@@ -1,5 +1,5 @@
 # BinaryManager
-C++ Binary Reader and Write (BinaryManager) Wrapper
+C++ Binary Reader and Write (BinaryManager) Wrapper **(C++17 or more)**
 
 ```cpp
 #include "BinaryManager.hpp"
