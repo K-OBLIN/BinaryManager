@@ -54,6 +54,7 @@ private:
 
 public:
     BinaryWriter(const std::string filePath);
+    ~BinaryWriter();
 
     void SetPosition(const std::size_t pos) noexcept;
     [[nodiscard]] std::size_t GetPosition() noexcept;

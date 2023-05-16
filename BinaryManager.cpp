@@ -320,6 +320,16 @@ BinaryWriter::BinaryWriter(const std::string filePath) {
 }
 
 /**
+ * @brief Destructor
+ * 
+ */
+BinaryWriter::~BinaryWriter() {
+    if (!m_ofs.fail()) {
+        m_ofs.close();
+    }
+}
+
+/**
  * @brief Set the position
  * 
  * @param pos The position(offset)
