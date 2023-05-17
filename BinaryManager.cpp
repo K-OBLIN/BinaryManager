@@ -23,6 +23,8 @@ BinaryReader::BinaryReader(const std::string filePath) {
     auto size = std::filesystem::file_size(filePath);
     std::vector<char> buf(size);
     ifs.read(buf.data(), size);
+    
+    ifs.close();
 
     m_span = buf;
     m_position = 0;
